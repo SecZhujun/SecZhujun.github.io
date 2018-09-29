@@ -11,7 +11,7 @@
 
     <title>
         
-        朱俊的博客 | Zhujun&#39;s Blog
+        散漫天下 - 朱俊的博客 | Zhujun&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    
+</div>
+    
 </div>
 
 
@@ -111,34 +115,60 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-09-20</div>
-        <div class="post-info">
-            <a href="/2018/09/20/散漫天下/">
-                <h3>
-                    散漫天下
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#诗歌" title="诗歌">诗歌</a>
-                <span>/</span>
-                
-                
-            </p>
+
+
+<div class="post-container">
+    <div class="post-title">
+        散漫天下
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-09-20 23:22:55</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#诗歌" title="诗歌">诗歌</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>1</p>
+<p>青春和水杯各燃烧了一半</p>
+<p>狗长出了天马的翅膀</p>
+<p>魔鬼的奸笑从苹果树上落下</p>
+<p>掀开被子露出来一片朝阳</p>
+<p>2</p>
+<p>平楼高起长破了天涯</p>
+<p>电梯压挤榨出了水花</p>
+<p>平云走马的盛世天下</p>
+<p>洋洋洒洒了一纸荒唐</p>
+<p>3</p>
+<p>纸片小人儿卷起了纷扬</p>
+<p>火烈的墨笔力透了地壳</p>
+<p>英雄和公主许下末日的爱</p>
+<p>宝剑和眼泪交织融合远去</p>
+<p>刮起了风和大雨在天下</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
         </div>
     </div>
-    
 </div>
-<ul class="pager">
-    
-    
-</ul>
-
     </div>
 </div>
 
@@ -239,10 +269,24 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '散漫天下',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>

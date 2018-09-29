@@ -11,7 +11,7 @@
 
     <title>
         
-        朱俊的博客 | Zhujun&#39;s Blog
+        About - 朱俊的博客 | Zhujun&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -71,7 +71,7 @@
                     <span>存档</span>
                 </a>
             </li>
-            <li >
+            <li  class=active >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
                     <span>关于</span>
@@ -111,33 +111,38 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
+<div class="post-content ">
+    <blockquote>
+<p>天上有行云，人在行云里</p>
+</blockquote>
+<p>Mail: <a href="mailto:miwordshere@gmail.com" target="_blank" rel="noopener">miwordshere@gmail.com</a></p>
+<p>这是一个永生的世界。人们永远不会老去，所有的祖宗都在同一个世界里。</p>
+<p>阿花和阿虎在公园前的喷泉相遇了。今天天气真不错，阿花说。温暖的余阳洒下金色的光辉。</p>
+<p>“是啊，真美，我在想怎么把这个场景用到我的作品中去，我要创造出世界上最好的绝世之作。”</p>
+<p>“时间还早，放松一下吧！看看这绿草青青，嬉逐的小猫，多有趣啊！”</p>
+<p>“不，我要走了，我看过阳光是如何照射的，接着我要去找前人是怎么写的，我会写出最不一样的。”</p>
+<p>阿虎走了，阿花饶有兴致地看着花丛，小猫和落日。</p>
+<p>未来还有那么久，为什么不享受当下呢？</p>
+<p>阿花和阿虎相识很久了。阿花去问了她奶奶的奶奶的奶奶，要不要和这个热情的男子在一起。阿虎问了他爷爷的爷爷的爷爷，要不要和安静的阿花在一起，他们都决定再观察一段时间，时间还早呢！不是吗？</p>
+<p>不知多少天后的一天，阿花和阿虎相约去爬山。落日的山腰，不愿永生的人仰面飘下，像落叶般轻飘飘的落下。</p>
+<p>阿花静静地看着，又是一个美丽的选择。阿虎心里想着，也许有一天做完了所有事，我也会像他们一样。</p>
+<p>这个世界里，阿花叫今者；阿虎叫来者。</p>
+<p>来者和今者，在爱因斯坦的手稿中，统称时间。</p>
+
     
-    <div class="post-preview">
-        <div class="post-time">2018-09-20</div>
-        <div class="post-info">
-            <a href="/2018/09/20/散漫天下/">
-                <h3>
-                    散漫天下
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#诗歌" title="诗歌">诗歌</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+        <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
     </div>
-    
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
 </div>
-<ul class="pager">
     
-    
-</ul>
+    <div id="comment-container">
+    </div>
+</div>
 
     </div>
 </div>
@@ -244,5 +249,19 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'About',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
